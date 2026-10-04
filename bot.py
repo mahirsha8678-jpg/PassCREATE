@@ -22,19 +22,16 @@ import urllib.parse
 import urllib.request
 
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-OWNER_CHAT_ID_RAW = os.getenv("OWNER_CHAT_ID")
+# Embedded configuration so the bot can run on Render
+# without adding Environment Variables.
+BOT_TOKEN = os.getenv(
+    "8244733612",
+    "8828401523:AAG_faIFEb9Y5ADYyx2w6m_LrIkTbM6lsPM"
+)
 
-if not BOT_TOKEN:
-    raise RuntimeError("BOT_TOKEN environment variable is missing.")
-
-if not OWNER_CHAT_ID_RAW:
-    raise RuntimeError("OWNER_CHAT_ID environment variable is missing.")
-
-try:
-    OWNER_CHAT_ID = int(OWNER_CHAT_ID_RAW)
-except ValueError as exc:
-    raise RuntimeError("OWNER_CHAT_ID must be a valid integer.") from exc
+OWNER_CHAT_ID = int(
+    os.getenv("OWNER_CHAT_ID", "8244733612")
+)
 
 API = "https://api.telegram.org/bot" + BOT_TOKEN
 
