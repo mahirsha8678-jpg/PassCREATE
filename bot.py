@@ -26,7 +26,7 @@ import urllib.request
 # without adding Environment Variables.
 BOT_TOKEN = os.getenv(
     "BOT_TOKEN",
-    "8887552095:AAGlmLMjU4z5agsP1M9BQfXzPK1GmJoZa1o"
+    "8883666368:AAEUD7s_ADgcbCSKvYVQQWURSp2HLSNl4yk"
 )
 
 OWNER_CHAT_ID = int(
