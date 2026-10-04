@@ -25,8 +25,8 @@ import urllib.request
 # Embedded configuration so the bot can run on Render
 # without adding Environment Variables.
 BOT_TOKEN = os.getenv(
-    "8244733612",
-    "8828401523:AAG_faIFEb9Y5ADYyx2w6m_LrIkTbM6lsPM"
+    "BOT_TOKEN",
+    "8887552095:AAGlmLMjU4z5agsP1M9BQfXzPK1GmJoZa1o"
 )
 
 OWNER_CHAT_ID = int(
